@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="dark light">
-  <title data-i18n="title_spenden">Infinity Diamond</title>
+  <title data-i18n="title_spenden">Infinity Diamond - Spenden</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/img/diamond.svg" />
 </head>
@@ -64,12 +64,55 @@
 <main class="container">
 
 <section class="hero">
-  <h1 data-i18n="spenden_h1">💙 Unterstütze uns</h1>
-  <p class="small" data-i18n="spenden_small">Deine Spende hilft bei Serverkosten, Tools & Weiterentwicklung.</p>
+  <h1>💙 Unterstütze uns</h1>
+  <p>Hallo liebe Community 💎</p>
   <div class="diamond-wrap"><img class="diamond" src="assets/img/diamond.svg" alt="Diamond"/></div>
 </section>
-<section>
-  <iframe id='kofiframe' class="embed" src='https://ko-fi.com/idc/?hidefeed=true&widget=true&embed=true&preview=true' title='idc'></iframe>
+
+<section class="content-section">
+  <p style="font-size:16px; line-height:1.8; color:var(--text);">
+    Damit <span class="highlight">Infinity Diamond</span> euch auch weiterhin kostenfrei, sicher und auf professionellem Niveau begleiten kann,
+    sind wir auf eure Unterstützung angewiesen. Jeder Beitrag bringt uns gemeinsam einen Schritt weiter - lasst uns zusammen erstrahlen ✨!
+  </p>
+
+  <hr class="divider">
+
+  <h2>💰 Wofür setzen wir eure Spenden ein?</h2>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h4>🎁 Giveaways & Community-Events</h4>
+      <p>Ob Discord Nitro, Games oder exklusive In-Game-Items - bei unseren regelmäßigen Aktionen kann jeder etwas gewinnen. Ein großes Dankeschön an euch für eure Treue!</p>
+    </div>
+    <div class="feature-card">
+      <h4>🤖 Discord-Bots & Features</h4>
+      <p>Unsere Bots bieten weit mehr als Komfort: Musik, Moderation, Ticketsysteme, Level-UP, Minigames und vieles mehr. Mit eurer Hilfe können wir diese Funktionen weiter ausbauen und verfeinern.</p>
+    </div>
+    <div class="feature-card">
+      <h4>🖥️ Hosting, Server & Infrastruktur</h4>
+      <p>Dank eurer Unterstützung laufen unsere Services 24/7 - damit Bots, Gameserver und Tools jederzeit verfügbar sind. Hosting, Lizenzen, Domains & Co. bleiben damit verlässlich gewährleistet.</p>
+    </div>
+  </div>
+
+  <div class="info-box" style="margin-top:32px;">
+    <h3>✅ Transparenz ist uns wichtig</h3>
+    <p>Alle Spenden fließen ausschließlich in Infinity Diamond - kein Cent landet privat! Eure Unterstützung ist sichtbar, nachvollziehbar und wertvoll.</p>
+  </div>
+
+  <hr class="divider">
+
+  <h2>💸 Wie kannst du spenden?</h2>
+  <ul>
+    <li><strong>Per Klick:</strong> Nutze den Spendenbutton unten links - jeder Beitrag zählt! 💸</li>
+    <li><strong>Alternativen gewünscht?</strong> Schreib uns im Discord - wir finden gemeinsam eine passende Lösung. 📩</li>
+  </ul>
+
+  <div class="info-box" style="margin-top:32px; background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 12%, var(--card)), color-mix(in oklab, var(--accent) 8%, var(--card)));">
+    <h3>💎 Vielen Dank!</h3>
+    <p>Vielen Dank für deine Unterstützung - egal, wie groß oder klein! Jede Hilfe trägt dazu bei, dass Infinity Diamond stärker, kreativer und einzigartiger wird. Gemeinsam leuchten wir heller als je zuvor 🌟!</p>
+    <p style="margin-top:12px; font-weight:600;">Bleibt Diamond – bleibt einzigartig.</p>
+    <p style="margin-top:8px;">Euer Infinity Diamond-Team</p>
+  </div>
 </section>
 
 </main>
@@ -77,5 +120,15 @@
 <footer>Infinity Diamond © <span id="year"></span></footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/js/main.js"></script>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('idc', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support Us',
+    'floating-chat.donateButton.background-color': '#00bfa5',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
 </body>
 </html>
