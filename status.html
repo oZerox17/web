@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <title data-i18n="title_status">Infinity Diamond</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/img/diamond.svg" />
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Primary">
+  <div class="nav-inner container">
+
+    <a class="brand" href="index.html">
+      <img src="assets/img/diamond.svg" alt="Diamond" />
+      <span>Infinity&nbsp;Diamond</span>
+    </a>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="menu" id="mainMenu">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="discord.html" data-i18n="nav_discord">Discord</a>
+      <a href="spenden.html" data-i18n="nav_spenden">Spenden</a>
+      <a href="unban.html" data-i18n="nav_entbannung">Entbannung</a>
+      <a href="links.html" data-i18n="nav_links">Links</a>
+      <a href="status.html" data-i18n="nav_status">Status</a>
+      <span class="nav-indicator"></span>
+    </div>
+
+    <div class="header-actions lang-toggle-group">
+      <label class="lang-switch" id="langSwitch" data-lang="de">
+        <input type="checkbox" id="langChk" aria-label="Language toggle">
+        <span class="slider"></span>
+      </label>
+      <button class="toggle" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <div class="mobile-inner">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="discord.html" data-i18n="nav_discord">Discord</a>
+      <a href="spenden.html" data-i18n="nav_spenden">Spenden</a>
+      <a href="unban.html" data-i18n="nav_entbannung">Entbannung</a>
+      <a href="links.html" data-i18n="nav_links">Links</a>
+      <a href="status.html" data-i18n="nav_status">Status</a>
+
+      <div class="mobile-controls">
+        <label class="lang-switch" id="langSwitchMobile" data-lang="de">
+          <input type="checkbox" id="langChkMobile" aria-label="Language toggle mobile">
+          <span class="slider"></span>
+        </label>
+        <button class="toggle" onclick="toggleTheme()">🌓</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+<section class="hero">
+  <h1 data-i18n="status_h1">Status</h1>
+  <p class="small" data-i18n="status_small">Server- & Service-Statusübersicht.</p>
+  <div class="diamond-wrap"><img class="diamond" src="assets/img/diamond.svg" alt="Diamond"/></div>
+</section>
+<section class="card">
+  <p data-i18n="status_info">Status-Seite folgt – für jetzt siehe Discord-Announcements.</p>
+</section>
+
+</main>
+
+<footer>Infinity Diamond © <span id="year"></span></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
